@@ -1,0 +1,233 @@
+/*.product {*/
+/*  color: blue;*/
+/*  !*border-color: black;*!*/
+/*  padding-left: 5rem;*/
+/*  !*border-width: medium;*!*/
+/*  !*width: 20rem;*!*/
+/*}*/
+
+.rounded-img {
+  width: 7rem;
+  border-radius: 50%;
+  /*border-radius: 50% 60% 50% 50%;*/
+  margin: auto;
+}
+
+.main-img {
+  align-self: center;
+  /*margin: 2rem;*/
+}
+
+.shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Name {
+  font-size: 5em;
+  font-family: "Candara Light", serif;
+  font-weight: 900;
+  align: center;
+}
+
+.love {
+  /*font-family: handwriting, cursive;*/
+  font-family: Mistral, cursive;
+  font-weight: 400;
+  font-size: xx-large;
+}
+
+@font-face {
+  font-family: 'handwriting';
+  src: local('handwriting'), url(/css/ofont.ru_Kobzar.ttf);
+}
+
+@font-face {
+  font-family: "Zhizn";
+  src: local("Zhizn"), url("css/ofont.ru_Zhizn.ttf");
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+  /*justify-content: space-between;*/
+  /*align-items: ;*/
+}
+
+.flex-item {
+  flex: auto;
+  /*margin: 2rem;*/
+  align-items: center;
+}
+
+.block {
+  display: inline-block;
+  margin: 10rem;
+}
+
+.title {
+  margin: 1rem 2rem 0 2rem;
+}
+
+.card {
+  position: relative;
+}
+
+.navigation-ul {
+  list-style-type: none;
+  margin: 2rem;
+  padding: 0;
+  overflow: hidden;
+  background-color: salmon;
+  filter: brightness(1.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Zhizn, cursive;
+  /*font-family: "Candara Light", cursive;*/
+  font-weight: 900;
+}
+
+.navigation-li {
+  display: inline;
+  margin: 0.5rem 4rem;
+  float: left;
+}
+
+.navigation-a {
+  display: flex;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 900;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: salmon;
+  filter: brightness(1.2);
+  margin: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 0.001rem 1.2rem;
+}
+
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem;
+  font-family: Zhizn, cursive;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+
+.product-card {
+  /*display: inline-block;*/
+  display: inline-flex;
+  flex-direction: column;
+  margin: 2rem;
+  border: 1px solid salmon;
+  /*float: left;*/
+  width: 17rem;
+}
+
+.product-card:hover {
+  border: 2px solid salmon;
+}
+
+.product-card img {
+  width: 80%;
+  height: auto;
+  margin: 1rem 1.5rem 0 1.5rem;
+  /*border-radius: 100%;*/
+}
+
+.product-card-desc {
+  margin: 0.5rem;
+  text-align: center;
+  font-size: small;
+}
+
+.product-card-title {
+  font-family: cursive;
+  font-weight: 900;
+  text-align: center;
+  margin: 1rem 1rem 0 1rem;
+}
+
+
+.product-card-footer {
+  margin: 1rem 2rem;
+}
+
+.product-card-button {
+  float: right;
+  /*align-self: end;*/
+  block-size: 2.5rem;
+  background-color: salmon;
+  /*background-color: white;*/
+  /*color: black;*/
+  filter: brightness(1.2);
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /*border: none;*/
+  border-radius: 15%;
+  /*border: black;*/
+  /*border: salmon;*/
+
+}
+
+.product-card-button:active {
+  border: salmon;
+}
+
+.product-card-button:active:after {
+  border: black;
+}
+
+.button-cart {
+  float: right;
+  width: 3rem;
+  height: 3rem;
+  background-color: salmon;
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.button-cart:active {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 0.65rem;
+}
+
+.button-cart:active:after {
+  width: 3rem;
+  height: 3rem;
+  /*margin: 0.5rem;*/
+}
+
+.button-enter {
+  width: 4rem;
+  height: 1.5rem;
+  border: salmon;
+  box-shadow: 0 0 10px salmon;
+  color: black;
+  font-size: large;
+  float: right;
+  margin: 1rem 2rem;
+  border-radius: 40%;
+  text-align: center;
+  padding: 0.2rem 0 0 0;
+  text-decoration: none;
+  font-family: "Candara Light", cursive;
+  font-weight: bolder;
+}
