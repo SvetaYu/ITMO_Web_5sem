@@ -371,3 +371,35 @@ section p {
     padding: 10px;
     border-radius: 10px;
 }
+
+#notification {
+    position: fixed;
+    top: 5rem;
+    right: 2.5rem;
+    padding: 1rem;
+    background-color: rgba(175, 210, 250, 0.8);
+    /*border: 1px solid #ccc;*/
+    display: none;
+}
+
+/*.hidden {*/
+/*    display: none;*/
+/*}*/
+
+.active {
+    color: mediumblue;
+    font-weight: bold;
+    text-decoration: underline;
+    /*filter: brightness(1.2);*/
+    /*font-weight: bolder;*/
+    /*font-weight: 900;*/
+]
+}
+
+.navigation-a:hover {
+    color: blue;
+}
+
+.pizza {
+
+}
