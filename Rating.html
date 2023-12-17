@@ -6,14 +6,13 @@
     <meta name="description" content="*описание* сайт для заказа пиццы">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>pizza for you</title>
-    <link rel="stylesheet" href="../css/MyStyle.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="css/MyStyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script src="../js/PageLoadTime.js"></script>
-    <script src="../js/Notification.js"></script>
-    <script src="../js/ActivePage.js"></script>
+    <script src="js/PageLoadTime.js"></script>
+    <script src="js/ActivePage.js"></script>
 </head>
 
 
@@ -25,7 +24,7 @@
     <span class="Name">
       PIZZA for you
     </span>
-        <img class="icon" src="../img/cute-rabbit-eating-pizza-cartoon-illustration-vector.jpg"
+        <img class="icon" src="img/cute-rabbit-eating-pizza-cartoon-illustration-vector.jpg"
              height="100px"
              align="top" alt="rabbit">
         <span class="header-buttons">
@@ -35,7 +34,7 @@
     </div>
 
     <div class="love title">
-        Сделано с любовью.
+<!--        Сделано с любовью.-->
     </div>
 </header>
 
@@ -44,7 +43,7 @@
 
     <nav>
         <ul class="navigation-ul">
-            <li class="navigation-li"><a class="navigation-a" href="Pizza.html">пицца</a></li>
+            <li class="navigation-li"><a class="navigation-a" href="index.html">пицца</a></li>
             <li class="navigation-li"><a class="navigation-a" href="Drinks.html">напитки</a></li>
             <li class="navigation-li"><a class="navigation-a" href="Desserts.html">десерты</a></li>
             <li class="navigation-li"><a class="navigation-a" href="Combo.html">комбо</a></li>
@@ -54,28 +53,35 @@
         </ul>
     </nav>
 
-    <div id="notification" class="hidden">Добавлено</div>
 
     <section>
-        <p><a id="desserts"></a>
-            десерты
-        </p>
-        <ul style="margin: 0">
-            <li class="product-card">
-                <h5 class="product-card-title"> Чизкейк Нью-Йорк</h5>
-                <img src="../img/чизкейк%20на%20белом.jpg" height="100px">
-                <div class="product-card-desc">
-                    <span></span>
-                </div>
-                <div class="product-card-footer">
-                    <span class="desc"> 100р </span>
-                    <button class="product-card-button">в корзину</button>
-                </div>
-            </li>
-        </ul>
+    <p class="ratingName">
+      Личный рейтинг
+    </p>
+        <form id="form">
+            <label for="name">Название товара:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="rating">Оценка:</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" required><br>
+            <label for="comment">Комментарий:</label>
+            <input type="text" id="comment" name="comment" required><br>
+            <button class="form-button" type="submit">Добавить</button>
+        </form>
+
+        <div id="results">
+            <table id="table">
+                <tr class="table-header">
+                    <th>название товара</th>
+                    <th>оценка</th>
+                    <th>комментарий</th>
+                </tr>
+            </table>
+        </div>
+
+
+        <script src="js/RatingTable.js"></script>
     </section>
-    <script src="../js/Notification.js"></script>
-    <script src="../js/ActivePage.js"></script>
+    <script src="js/ActivePage.js"></script>
 </main>
 
 
